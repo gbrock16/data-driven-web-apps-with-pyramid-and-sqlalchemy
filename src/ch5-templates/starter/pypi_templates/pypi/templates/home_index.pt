@@ -1,0 +1,17 @@
+<div metal:use-macro="load: _layout.pt">
+    <div metal:fill-slot="content">
+
+        <div class="content">
+            <h1>Some packages</h1>
+            <div class="package" tal:repeat="p packages">
+                <span class="title">${p.name}</span>
+                <span class="title">${p.version}</span>
+            </div>
+        </div>
+
+    <div metal:fill-slot="additional-css" tal:omit-tag>
+        <!--spot for additional css-->
+    </div>
+
+    </div>
+</div>
